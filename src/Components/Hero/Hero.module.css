@@ -1,0 +1,45 @@
+.main {
+	width: 100%;
+	height: 80vh;
+	background-repeat: no-repeat;
+        background-size:cover;
+        
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.banner_bottom {
+	height: 7.4rem;
+	width: 100%;
+	background-image: linear-gradient(transparent, 
+		rgba(37, 37, 37, 0.61), #242424
+	);
+	margin-top: -7.4rem;
+}
+
+/* background-image: url('https://wallpapershome.ru/images/pages/pic_h/22520.jpg') */
+
+/* https://image.tmdb.org/t/p/w300/xDMIl84Qo5Tsu62c9DGWhmPI67A.jpg */
+.movie_card {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin-left: 2.5%;
+	margin-block-start: 10%;
+	row-gap: 10px;
+}
+
+.title {
+	font-size: 40px;
+	font-weight: bold;
+}
+.description {
+	font-size: medium;
+}
+
+.button {
+	display: flex;
+	gap: 10px;
+	margin-block-start: 10px;
+}

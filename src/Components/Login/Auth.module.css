@@ -1,0 +1,17 @@
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+
+	width: 400px;
+	height: 300px;
+	row-gap: 20px;
+
+	top: 50px;
+	position: fixed;
+}
+
+.main input {
+	width: 250px;
+}
