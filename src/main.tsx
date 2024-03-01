@@ -18,10 +18,6 @@ const router = createBrowserRouter([
     path: '/',
     element: <App/>
   },
-  {
-    path: '/home',
-    element: <Home/>
-  },
     {
     path: '/series',
     element: <Series/>
@@ -34,11 +30,10 @@ const router = createBrowserRouter([
     path: '/recent',
     element: <Home/>
   },
-  {
+    {
     path: '/sign_in',
     element: <SignIn/>
   },
-
   {
     path: "/login",
     element: <Login/>,

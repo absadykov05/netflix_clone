@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import s from './Series.module.scss';
+import { useSelector } from 'react-redux'
+import s from './Series.module.scss'
 import { FilmList } from '../../FilmList'
-import axios from 'axios'
-import { setOriginals, setTrending, setNowPlaying, setPopular, setTopRated, setUpComing } from '../../../Redux/reducers/filmsReducer'
-import { NavLink } from 'react-router-dom'
+import {Header} from '../../Header/Header'
+import {Hero} from '../../Hero/Hero'
 
 
 export const Series = () => {
   const films = useSelector(state => state.films);
-  const dispatch = useDispatch();
   return (
+    <>
+    <Header/>
+    <Hero/>
     <div>
         <div className={s.text}>NETFLIX ORIGNALS</div>
         <div className={s.film_list}>
@@ -76,5 +77,6 @@ export const Series = () => {
           }
         </div>
       </div>
+      </>
   )
 }

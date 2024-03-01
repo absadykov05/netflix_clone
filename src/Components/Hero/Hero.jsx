@@ -8,8 +8,10 @@ export const Hero = () => {
   useEffect(()=> {
      axios('https://api.themoviedb.org/3/trending/all/week?api_key=224b7e885e36789d096afe2680dc09f5')
       .then((res) => {
-        const heroMovie = res.data.results[Math.floor(Math.random()*res.data.results.length -1)];
+        const heroMovie = res.data.results[Math.floor(Math.random()*(res.data.results.length -1))];
         setMovie(heroMovie);
+        console.log(heroMovie);
+        console.log(5);
       });
   }, [])
   
